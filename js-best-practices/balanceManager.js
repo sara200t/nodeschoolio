@@ -11,7 +11,7 @@ module.exports = {
     }
     return amount <= balance
   },
-  
+
   decreaseBalance: function (amount) {
     var errorMessage
     if (!this.isValidAmount(amount)) {
@@ -37,8 +37,8 @@ module.exports = {
       throw new Error(errorMessage)
     }
     balance += amount
-  }, 
+  },
   isValidAmount: function (amount) {
-    return !(amount == null || amount == undefined);
-  }  
+    return !(amount == null || amount == undefined)
+  }
 }
